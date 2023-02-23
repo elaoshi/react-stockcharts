@@ -185,7 +185,7 @@ function helper(props, moreProps, xAccessor, width) {
 					// y: yScale(d.x + d.dx),
 					y: yScale(d.x1),
 					// height: yScale(d.x - d.dx) - yScale(d.x),
-					height: yScale(d.x1) - yScale(d.x0),
+					height: Math.abs(yScale(d.x1) - yScale(d.x0)),
 					x,
 					width,
 					w1: w1.width,
