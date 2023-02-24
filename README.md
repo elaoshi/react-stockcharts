@@ -86,3 +86,11 @@ This is alpha state software, the api will change with each minor version.
 
 
 # NODE 8
+
+Mac run:
+
+sudo sysctl -w kern.maxfiles=65536
+sudo sysctl -w kern.maxfilesperproc=65536
+ulimit -n 65536 
+
+
